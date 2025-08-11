@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first-section">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Arin</span>
+                <div>And I am a Passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="image">
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>
+                Hey there! I'm Arin a final-year Computer Science student with a passion for building clean,
+                responsive, and visually engaging web experiences. I love turning ideas into interactive websites
+                that not only look great but feel intuitive to use.
+            </p> <br>
+            <p>
+                I'm a full-stack web developer with experience in building responsive and dynamic web applications using
+                modern technologies like HTML, CSS, JavaScript, React, and Node.js.
+            </p>
+
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project-card">
+                    <h3>1. Responsive Website</h3>
+                    <p>A simple responsive website built with HTML and CSS.</p>
+                    <button><a href="#" target="_blank">Check it out</a></button>
+                </div>
+                <div class="project-card">
+                    <h3>2. To-Do list</h3>
+                    <p>A simple To-do list where you can add, delete you tasks.</p>
+                    <button><a href="#" target="_blank">Check it out</a></button>
+                </div>
+                <div class="project-card">
+                    <h3>3. Portfolio</h3>
+                    <p>Portfolio website with smooth animations and responsive design.</p>
+                    <button><a href="#" target="_blank">Check it out</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Arin. All rights reserved.</p>
+        <span>Follow Me :</span>
+        <a href="#" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href="#" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
