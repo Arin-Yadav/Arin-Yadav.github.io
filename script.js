@@ -1,7 +1,7 @@
 //   Setup and start animation! 
 var typed = new Typed('#element', {
     //   strings: ['Web Developer', 'Web Designer.'],
-      strings: ['Web Developer.'],
+      strings: ['Full-Stack Web Developer.'],
       typeSpeed: 50,
     });
 
