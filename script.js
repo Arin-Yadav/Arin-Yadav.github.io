@@ -5,12 +5,20 @@ var typed = new Typed("#element", {
   typeSpeed: 50,
 });
 
-// Toggle mobile menu
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
 
+// Toggle menu on hamburger click
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
+});
+
+// Close menu when a link is clicked
+const links = navLinks.querySelectorAll("a");
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+  });
 });
 
 // Optional: Simple contact form alert

@@ -1,139 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-  </head>
 
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">Portfolio</div>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/about.css" />
+  <link rel="stylesheet" href="./css/skillsAndProjects.css" />
+  <link rel="stylesheet" href="./css/projects.css" />
+  <link rel="stylesheet" href="./css/contact.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">Portfolio</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section class="first-section" id="home">
+      <div class="leftSection">
+        Hi, I'm <span class="purple">Arin Yadav</span>
+        <div>And I am a</div>
+        <span id="element"></span>
+        <div>
+          <a href="https://github.com/Arin-Yadav" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/arinyadav/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="rightSection">
+        <img src="./assets/images/linkedin_profile.JPG" alt="image" />
+      </div>
+    </section>
+
+    <!-- About Me  -->
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <p>
+        Hey there! I'm Arin Yadav a final-year Computer Science student with a
+        passion for building clean, responsive, secure and visually engaging
+        web experiences. I love turning ideas into interactive websites that
+        not only look great but feel intuitive to use.
+      </p>
+      <br />
+      <p>
+        I'm a full-stack web developer with experience in building responsive
+        and dynamic web applications using modern technologies like HTML, CSS,
+        JavaScript, Tailwind CSS, React.js, and Node.js, MongoDB.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skillsAndEducation">
+      <!-- <h2>Skills</h2> -->
+      <div class="skills-container">
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React.js</li>
+          <li>Tailwind CSS</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>MongoDB</li>
         </ul>
-        <div class="hamburger" id="hamburger">&#9776;</div>
-      </nav>
-    </header>
+      </div>
+    </section>
 
-    <main>
-      <section class="first-section">
-        <div class="leftSection">
-          Hi, I'm <span class="purple">Arin Yadav</span>
-          <div>And I am a</div>
-          <span id="element"></span>
-          <div>
-            <a href="https://github.com/Arin-Yadav" target="_blank">
-              <i class="fab fa-github"></i>
+    <!-- Education -->
+    <section id="education" class="skillsAndEducation">
+      <!-- <h2>Education</h2> -->
+      <div class="education">
+        <h3>Education</h3>
+        <ul>
+          <li>
+            <strong>Bachelor of Technology in Computer Science</strong> -
+            Chhatrapati Shivaji Maharaj University ( 2022 - 2026 )
+          </li>
+          <!-- <li>Certifications: Web Development, JavaScript, React.js</li> -->
+        </ul>
+      </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>My Projects</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <div class="card-content">
+            <h3>Blogify Website</h3>
+            <p>
+              A secure, fullstack blogging app with real time CRUD, built using React, Node.js, Express, and MongoDB.
+            </p>
+          </div>
+          <button>
+            <a href="https://fullstack-blogify-website-owi2.vercel.app" target="_blank">
+              Check it out
             </a>
+          </button>
+        </div>
 
-            <a href="https://www.linkedin.com/in/arinyadav/" target="_blank">
-              <i class="fab fa-linkedin"></i>
+        <div class="project-card">
+          <div class="card-content">
+            <h3>Weather App</h3>
+            <p>
+              A simple React-based weather application that fetches real-time data from the OpenWeather API.
+            </p>
+          </div>
+          <button>
+            <a href="https://arin-weather-app.netlify.app" target="_blank">
+              Check it out
             </a>
-          </div>
+          </button>
         </div>
-        <div class="rightSection">
-          <img src="bg.png" alt="image" />
+
+        <div class="project-card">
+          <div class="card-content">
+            <h3>Real-time Chat App</h3>
+            <p>A responsive real-time chat application with a clean UI. Built to showcase seamless communication and
+              modern front-end design skills.</p>
+          </div>
+          <button>
+            <a href="https://github.com/Arin-Yadav/Chat-App" target="_blank">
+              Check it out
+            </a>
+          </button>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="about" id="about">
-        <h2>About Me</h2>
-        <p>
-          Hey there! I'm Arin Yadav a final-year Computer Science student with a
-          passion for building clean, responsive, secure and visually engaging
-          web experiences. I love turning ideas into interactive websites that
-          not only look great but feel intuitive to use.
-        </p>
-        <br />
-        <p>
-          I'm a full-stack web developer with experience in building responsive
-          and dynamic web applications using modern technologies like HTML, CSS,
-          JavaScript, Tailwind CSS, React.js, and Node.js, MongoDB.
-        </p>
-      </section>
-
-      <section class="projects" id="projects">
-        <h2>My Projects</h2>
-        <div class="project-list">
-          <div class="project-card">
-            <div class="card-content">
-              <h3>1. Blogify Website</h3>
-              <p>
-                A secure, blogging app with JWT auth and dynamic rendering using
-                Node.js, Express, MongoDB, and EJS.
-              </p>
-            </div>
-            <button>
-              <a
-                href="https://github.com/Arin-Yadav/Blogify_project"
-                target="_blank"
-                >Check it out</a
-              >
-            </button>
-          </div>
-          <div class="project-card">
-            <div class="card-content">
-              <h3>2. Url-Shortener</h3>
-              <p>
-                A URL shortener built with Node.js, Express, and MongoDB. Users
-                can sign up, shorten links, and admin can view all shortened
-                URLs through a secure dashboard.
-              </p>
-            </div>
-            <button>
-              <a
-                href="https://github.com/Arin-Yadav/url-shortener"
-                target="_blank"
-                >Check it out</a
-              >
-            </button>
-          </div>
-          <div class="project-card">
-            <div class="card-content">
-              <h3>3. TO-do list</h3>
-              <p>Simple to-do list web app with add/remove functionality.</p>
-            </div>
-            <button>
-              <a href="https://github.com/Arin-Yadav/To-do-list" target="_blank"
-                >Check it out</a
-              >
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact" id="contact">
+    <!-- Contact  -->
+    <section class="contact" id="contact">
+      <!-- <h2>Contact Me</h2> -->
+      <form id="contactForm">
         <h2>Contact Me</h2>
-        <form id="contactForm">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea
-            name="message"
-            rows="5"
-            placeholder="Your Message"
-            required></textarea>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-      </section>
-    </main>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
 
-    <footer>
-      <p>&copy; 2025 Arin. All rights reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Arin. All rights reserved.</p>
+  </footer>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
-  </body>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

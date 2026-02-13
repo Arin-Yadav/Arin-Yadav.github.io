@@ -1,0 +1,95 @@
+.first-section {
+  height: calc(100vh - 70px);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(0, 0, 33);
+  color: white;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+
+.first-section > div {
+  width: 40%;
+  min-width: 280px;
+}
+
+.leftSection {
+  font-size: 2.5rem;
+  line-height: 1.4;
+}
+
+.rightSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.rightSection img {
+  width: 100%;
+  max-width: 300px; /* cap size on large screens */
+  aspect-ratio: 1 / 1; /* ensures perfect square before rounding */
+  border-radius: 50%; /* makes it circular */
+  object-fit: cover; /* fills the circle without distortion */
+  object-position: top; /* keeps focus on top of image */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.rightSection img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .rightSection img {
+    max-width: 160px; /* smaller circle on phones */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .rightSection img {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .rightSection img {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .rightSection img {
+    max-width: 300px;
+  }
+}
+
+/* Responsive hero-section */
+@media (max-width: 768px) {
+  .first-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 3rem 1.5rem;
+  }
+
+  .first-section > div {
+    width: 100%;
+  }
+
+  .leftSection {
+    font-size: 1.8rem;
+  }
+
+  /* .rightSection img {
+    width: 100%;
+    margin-top: 20px;
+  } */
+}

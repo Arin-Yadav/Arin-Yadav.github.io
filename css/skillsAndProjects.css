@@ -1,0 +1,90 @@
+.skillsAndEducation {
+  width: 100%;
+  padding: 65px 30px;
+  background: rgb(0, 0, 33);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #f3f4f6;
+}
+
+.skillsAndEducation h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #93c5fd;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 10px;
+}
+
+.skillsAndEducation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skillsAndEducation li {
+  background: #111827;
+  margin: 10px 0;
+  padding: 12px 18px;
+  border-radius: 6px;
+  border-left: 4px solid #3b82f6;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.skillsAndEducation li:hover {
+  transform: translateX(6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Extra small devices (phones < 480px) */
+@media (max-width: 480px) {
+  .skillsAndEducation {
+    padding: 20px;
+  }
+
+  .skillsAndEducation h2 {
+    font-size: 1.6rem;
+  }
+
+  .skillsAndEducation h3 {
+    font-size: 1.2rem;
+  }
+
+  .skillsAndEducation li {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+  }
+}
+
+/* Small devices (phones to tablets: 481px–767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .skillsAndEducation h2 {
+    font-size: 1.8rem;
+  }
+
+  .skillsAndEducation h3 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Medium devices (tablets: 768px–1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .skillsAndEducation h2 {
+    font-size: 2rem;
+  }
+
+  .skillsAndEducation h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Large devices (desktops ≥ 1024px) */
+@media (min-width: 1024px) {
+  .skillsAndEducation h2 {
+    font-size: 2.2rem;
+  }
+
+  .skillsAndEducation h3 {
+    font-size: 1.6rem;
+  }
+}

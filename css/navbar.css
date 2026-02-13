@@ -1,0 +1,75 @@
+/* Navbar base */
+.navbar {
+  position: fixed;           /* keeps it stuck at the top */
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;               /* full width */
+  z-index: 1000;             /* ensures it stays above other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111827;
+  padding: 15px 25px;
+  color: #f3f4f6;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Add spacing so content doesn't hide behind navbar */
+body {
+  padding-top: 70px; /* adjust to match navbar height */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f59e0b;
+}
+
+/* Nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #f3f4f6;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #3b82f6;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #f3f4f6;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px; /* just below navbar */
+    right: 0;
+    background: #111827;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    gap: 15px;
+    display: none; /* hidden by default */
+  }
+
+  .nav-links.active {
+    display: flex; /* show when toggled */
+  }
+
+  .hamburger {
+    display: block; /* show hamburger on small screens */
+  }
+}
