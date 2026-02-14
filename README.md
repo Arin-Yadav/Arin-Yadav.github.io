@@ -62,7 +62,7 @@ This portfolio demonstrates:
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/Arin-Yadav/Arin-Yadav.github.io
+git clone https://github.com/Arin-Yadav/Arin-Yadav.github.io.git
 
 # Navigate into the project folder
 cd Arin-Yadav.github.io
